@@ -72,5 +72,20 @@ sudo find . -exec /bin/sh \; -quit
 This should drop a root shell.
 
 
+---
 
+## Install Nmap and Metasploit
+
+Install Nmap:
+```bash
+sudo apt install nmap -y
+```
+
+Install Metasploit Framework:
+
+```bash
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
+  chmod 755 msfinstall && \
+  ./msfinstall
+```
 
