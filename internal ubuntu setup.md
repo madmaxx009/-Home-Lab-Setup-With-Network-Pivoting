@@ -4,6 +4,8 @@ This guide outlines the detailed setup steps for the **internal Ubuntu 20.04 ser
 
 ---
 
+
+
 ## 1️ Install Ubuntu 20.04 Server
 
 - Download the Ubuntu 20.04 LTS ISO.
@@ -11,6 +13,8 @@ This guide outlines the detailed setup steps for the **internal Ubuntu 20.04 ser
   - **eth0** (internal): `10.10.10.x/24`
   - **eth1** (AD network): `192.168.2.x/24`
 - Assign static IPs during or after installation.
+
+
 
 
 
@@ -27,6 +31,9 @@ Start and enable Apache:
 sudo systemctl enable apache2
 sudo systemctl start apache2
 ```
+
+
+
 
 ## 3️ Create Vulnerable Web Application
 
@@ -47,6 +54,9 @@ Test:
 ```bash
 Visit http://<Ubuntu-External-IP>/cmdinj.php?ip=127.0.0.1 in your browser.
 ```
+
+
+
 
 ## 4️ Setup Cronjob for Privilege Escalation
 
