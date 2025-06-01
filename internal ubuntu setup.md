@@ -48,6 +48,7 @@ sudo adduser pivotuser
 ```
 Set password (e.g., 123456).
 
+---
 
 ## Create find Privilege Escalation Misconfiguration
 
