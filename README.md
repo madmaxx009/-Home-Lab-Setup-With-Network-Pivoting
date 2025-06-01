@@ -12,7 +12,7 @@ This project demonstrates a **realistic multi-stage penetration testing scenario
 | Web Server | Ubuntu         | 192.168.1.0/24, 10.10.10.0/24   | Command Injection in Apache    | Initial Access, PrivEsc     |
 | Internal Server | Ubuntu         | 10.10.10.0/24, 192.168.2.0/24   | Weak SSH Password, `find` misconfig | Pivot, PrivEsc, Enumeration |
 | Windows Server | Windows Server 2012 | 192.168.2.0/24                     | Rejetto HFS v2.3c RCE         | Administrator Shell         |
-| Windows 7 | Windows 7       | 192.168.2.0/24                     | MS17-010 (EternalBlue)        | SYSTEM Shell               |
+| Windows 7 | Windows 7       | 192.168.2.0/24                     | MS17-010 (EternalBlue)        | Administrator Shell               |
 
 ---
 
