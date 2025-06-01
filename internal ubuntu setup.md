@@ -23,10 +23,9 @@ This guide outlines the detailed setup steps for the **internal Ubuntu 20.04 ser
 ```bash
 sudo apt update
 sudo apt install apache2 -y
-Start and enable Apache:
 ```
 
-
+  Start and enable Apache:
 ```bash
 sudo systemctl enable apache2
 sudo systemctl start apache2
