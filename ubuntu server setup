@@ -1,0 +1,24 @@
+# Ubuntu 14.04 Server Setup for Penetration Testing Lab
+
+This guide explains how to set up the Ubuntu 14.04 machines used in the multi-tier penetration testing lab, including configurations for networking, vulnerable services, and tools installation.
+
+---
+
+## 1. Install Ubuntu 14.04 Server
+
+- Download Ubuntu 14.04 ISO from the official archive or trusted mirror.
+- Install Ubuntu Server on your VM or physical machine.
+- Configure networking during installation:
+  - Assign static IP addresses for each network interface according to your lab design.
+    - Example for public-facing server:
+      - `eth0` (external): `192.168.1.X/24`
+      - `eth1` (internal): `10.10.10.X/24`
+
+---
+
+## 2. Configure Network Interfaces
+
+Edit `/etc/network/interfaces` to set static IPs for both NICs:
+
+```bash
+sudo nano /etc/network/interfaces
