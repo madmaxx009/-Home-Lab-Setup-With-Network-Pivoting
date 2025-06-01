@@ -12,7 +12,7 @@ This guide outlines the detailed setup steps for the **internal Ubuntu 20.04 ser
   - **eth1** (AD network): `192.168.2.x/24`
 - Assign static IPs during or after installation.
 
----
+
 
 ## 2️ Install Apache Web Server
 
