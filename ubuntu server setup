@@ -22,3 +22,4 @@ Edit `/etc/network/interfaces` to set static IPs for both NICs:
 
 ```bash
 sudo nano /etc/network/interfaces
+```
