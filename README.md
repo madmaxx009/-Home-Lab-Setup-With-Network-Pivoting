@@ -68,21 +68,4 @@ This project demonstrates a **realistic multi-stage penetration testing scenario
 
 ---
 
-##  Network Diagram
 
-
-
-[Internet]
-|
-[Ubuntu Web Server]
-(192.168.1.x / 10.10.10.x)
-|
-|--- Pivot using Chisel/Proxychains ---|
-|
-[Internal Ubuntu Server]
-(10.10.10.x / 192.168.2.x)
-|
----------------------------------
-| |
-[Windows Server 2012] [Windows 7]
-(192.168.2.x) (192.168.2.x)
