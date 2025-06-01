@@ -8,7 +8,7 @@ This guide outlines the detailed setup steps for the **internal Ubuntu 20.04 ser
 
 ## 1️ Install Ubuntu 20.04 Server
 
-- Download the Ubuntu 20.04 LTS ISO.
+- Download the Ubuntu 14.04 LTS ISO.
 - Install on a VM or physical machine with the following configuration:
   - **eth0** (internal): `10.10.10.x/24`
   - **eth1** (AD network): `192.168.2.x/24`
