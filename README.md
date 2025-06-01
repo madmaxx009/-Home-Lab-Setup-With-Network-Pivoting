@@ -18,19 +18,27 @@ This project demonstrates a **realistic multi-stage penetration testing scenario
 
 ##  Attack Flow
 
+
+
 ### 1️ Initial Foothold: Web Server (Public-Facing Ubuntu)
 - Exploited **command injection** vulnerability in a web application hosted on Apache.
 - Gained a low-privilege shell.
 - Escalated privileges via a **cronjob misconfiguration**.
 
+
+
 ### 2️ Pivoting to Internal Network
 - Used **Chisel** for port forwarding and **proxychains** to access the internal network (`10.10.10.0/24`).
+
+
 
 ### 3️ Internal Server Exploitation (Ubuntu)
 - Brute-forced **SSH credentials** using **Hydra**.
 - Escalated privileges via a misconfigured **find command**.
 - Installed **Nmap** and **Metasploit** for further enumeration and exploitation.
 - Enumerated the **Active Directory network** (`192.168.2.0/24`).
+
+
 
 ### 4️ Windows Exploitation (AD Network)
 - **Windows Server 2012**: Exploited **Rejetto HFS v2.3c** (RCE) using Metasploit to gain an **Administrator shell**.
