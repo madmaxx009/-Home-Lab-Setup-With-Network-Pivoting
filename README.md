@@ -71,43 +71,18 @@ This project demonstrates a **realistic multi-stage penetration testing scenario
 ##  Network Diagram
 
 
-+----------------------+
-|   Attacker Machine   |
-| (Kali / Parrot OS)   |
-+----------------------+
-            |
-            | (Public Access)
-            v
-+-----------------------------+
-| Ubuntu Web Server (Apache)  |
-| 192.168.1.x / 10.10.10.x    |
-| - Command Injection Vuln    |
-| - Cronjob Misconfig (PrivEsc)|
-+-----------------------------+
-            |
-            | (Pivot via Chisel)
-            v
-+-----------------------------+
-| Internal Ubuntu Server      |
-| 10.10.10.x / 192.168.2.x    |
-| - Weak SSH Credentials      |
-| - find Command Misconfig    |
-| - Nmap & Metasploit Installed|
-+-----------------------------+
-            |
-            | (Internal AD Network)
-            v
-+-----------------------------+
-| Windows Server 2012         |
-| 192.168.2.x                 |
-| - Rejetto HFS v2.3c (RCE)   |
-+-----------------------------+
-            |
-            | (Same AD Network)
-            v
-+-----------------------------+
-| Windows 7 Machine           |
-| 192.168.2.x                 |
-| - MS17-010 (EternalBlue)    |
-+-----------------------------+
 
+[Internet]
+|
+[Ubuntu Web Server]
+(192.168.1.x / 10.10.10.x)
+|
+|--- Pivot using Chisel/Proxychains ---|
+|
+[Internal Ubuntu Server]
+(10.10.10.x / 192.168.2.x)
+|
+---------------------------------
+| |
+[Windows Server 2012] [Windows 7]
+(192.168.2.x) (192.168.2.x)
